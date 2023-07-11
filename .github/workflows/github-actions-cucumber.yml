@@ -71,4 +71,4 @@ jobs:
         uses: actions/deploy-pages@v2
 
       - name: Link Relatorio
-        run: echo 'https://marilliadantas.github.io/google-pesquisa-automation.git'
+        run: echo 'https://marilliadantas.github.io/google-pesquisa-automation'
