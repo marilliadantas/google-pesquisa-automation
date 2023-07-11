@@ -1,5 +1,5 @@
 # Automação de Pesquisa no Google
-O projeto consiste na automação da página de pesquisa do google, utilizando os seguintes recursos:
+O projeto consiste na automação da página de pesquisa do google, utilizando os seguintes recursos: 
 
 - IDE: IntelliJ;
 - Padrão PageObjects;
