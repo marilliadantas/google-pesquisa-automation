@@ -7,10 +7,13 @@ import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 import page_objects.PesquisaGooglePage;
+import page_objects.ResultadosPesquisaGooglePage;
 
 public class PesquisaGoogleSteps extends BaseSteps {
 
     PesquisaGooglePage paginaPesquisa = new PesquisaGooglePage(browser);
+    ResultadosPesquisaGooglePage retultPesquisa = new ResultadosPesquisaGooglePage(browser);
+
 
     @Dado("que o usuario esta na pagina de pesquisa")
     public void queOUsuarioEstaNaPaginaDePesquisa() {
@@ -31,7 +34,7 @@ public class PesquisaGoogleSteps extends BaseSteps {
 
     @Entao("o sistema apresenta os resultados buscados")
     public void oSistemaApresentaOsResultadosBuscados() {
-        int resut = paginaPesquisa.getResultPesquisa();
+        int resut = retultPesquisa.getResultPesquisa();;
         Assert.assertTrue(resut > 0);
         screenshot();
     }

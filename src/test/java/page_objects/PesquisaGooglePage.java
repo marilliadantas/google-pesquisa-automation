@@ -31,12 +31,4 @@ public class PesquisaGooglePage extends BasePage {
         waitElementVisible(btnpesquisar, 5);
         driver.findElement(btnpesquisar).click();
     }
-
-    public int getResultPesquisa() {
-        String texto = driver.findElement(txtResultadosPesquisa).getText();
-        String[] vetorTexto = texto.split(" ");
-        texto = vetorTexto[1].replace(",", "").replace(".", "");
-        int nunTratado = Integer.parseInt(texto);
-        return nunTratado;
-    }
 }
